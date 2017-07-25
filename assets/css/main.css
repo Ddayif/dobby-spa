@@ -6772,7 +6772,40 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/ }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #FAE596;
+  font-family: 'Roboto Condensed', sans-serif; }
+
 nav {
   background-color: #795548; }
+
+.slider .indicators .indicator-item {
+  z-index: 2;
+  bottom: 100px; }
+
+.contenedor-imagenes {
+  position: absolute;
+  bottom: 5px;
+  z-index: 3; }
+  .contenedor-imagenes .img-circle {
+    border: 7px solid #BF7D56; }
+
+.texto {
+  position: absolute; }
+  .texto h6 {
+    font-weight: 700; }
+
+input[type=text]:not(.browser-default) {
+  border-bottom: none; }
+
+.contenedor-boton {
+  position: absolute;
+  top: 352px; }
+  .contenedor-boton button {
+    background-color: #BF7D56; }
 
 /*# sourceMappingURL=main.css.map */
