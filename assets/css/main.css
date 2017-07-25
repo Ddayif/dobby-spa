@@ -6813,7 +6813,7 @@ input[type=text]:not(.browser-default) {
   background-color: #DEE1EE;
   position: relative;
   bottom: -335px;
-  height: auto; }
+  height: 63vh; }
   .contenedor-tercera-seccion .contenedor-imagen {
     z-index: 1; }
   .contenedor-tercera-seccion .img-welcome {
@@ -6829,5 +6829,27 @@ input[type=text]:not(.browser-default) {
   padding-top: 20px; }
   .contenedor-texto-welcome p {
     padding-top: 2px; }
+
+.contenedor-cuarta-seccion {
+  position: relative;
+  top: 316px;
+  background-color: #432D26;
+  color: #BF7D56;
+  height: auto; }
+  .contenedor-cuarta-seccion .contenedor-imagen {
+    padding-top: 140px;
+    padding-bottom: 100px; }
+  .contenedor-cuarta-seccion .img-about {
+    border-radius: 7px; }
+  .contenedor-cuarta-seccion .img-gift {
+    border-radius: 7px;
+    padding-top: 70px; }
+
+/*footer*/
+.page-footer {
+  position: relative;
+  top: 296px;
+  background-color: #261412;
+  color: #BF7D56; }
 
 /*# sourceMappingURL=main.css.map */
