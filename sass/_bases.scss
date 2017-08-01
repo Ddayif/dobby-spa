@@ -4,26 +4,122 @@
 }
 
 body{
-	background-color: #FAE596;
+	background-color: #eae0b8;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*seccion nav*/
+
 nav{
-	background-color: #795548;
+	background-color: $color_nav;
 }
 
+
+/*slider*/
 .slider .indicators .indicator-item {
     z-index: 2;
     bottom: 100px;
 }
 
-.contenedor-imagenes{
+
+/*imagenes y botones de la primera seccion*/
+
+.contiene-todo{
+	margin-top: -100px;
+    position: relative;
+    z-index: 2;
+	text-align: $alineacion_texto;
+	h6{
+		font-weight: 700;
+	}
+	button{
+		background-color: $color_botones;
+		margin-top: 10px;
+		@include border-radius-imagenes();
+		width: 50%;
+	}
+	.img-circle{
+		border: 7px solid $color_letra_principal;
+		margin-bottom: 30px;
+	}
+
+}
+
+
+/*tercera seccion*/
+
+.contenedor-seccion-3{
+	background-color: #DEE1EE;
+	.img-welcome{
+		border-radius: 50px;
+		padding-left: 0;
+		padding-top: 22px;
+	}
+}
+
+
+/*cuarta seccion*/
+.contenedor-seccion-4{
+	background-color: $color_nav;
+	color: $color_letra_principal;
+}
+
+.radius-img{
+	@include border-radius-imagenes();
+}
+
+
+/*seccion footer*/
+
+.primer-footer{
+	background-color: $background_footer;
+	h5,p{
+		color: $color_letra_principal;
+	}
+}
+
+.segundo-footer{
+	color: $color_letra_principal;
+}
+
+.logos{
+	border-radius: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.contenedor-imagenes{
 	position: absolute;
     bottom: 5px;
     z-index: 3;
-    	.img-circle{
-			border: 7px solid #BF7D56;
-		}
+    	
 }
 
 .texto{
@@ -40,13 +136,11 @@ input[type=text]:not(.browser-default){
 .contenedor-boton{
 	position: absolute;
 	top: 352px;
-		button{
-			background-color: #BF7D56;
-		}
+		
 }
 
 /*seccion tres*/
-.contenedor-tercera-seccion{
+/*.contenedor-tercera-seccion{
 	background-color: #DEE1EE;
 	position: relative;
 	bottom: -335px;
@@ -95,9 +189,9 @@ input[type=text]:not(.browser-default){
 }
 
 /*footer*/
-.page-footer{
+/*.page-footer{
 	position: relative;
     top: 296px;
     background-color: #261412;
     color: #BF7D56;
-}
+}*/
