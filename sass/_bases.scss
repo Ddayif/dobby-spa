@@ -4,7 +4,7 @@
 }
 
 body{
-	background-color: #eae0b8;
+	background-color: $background_body;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -22,9 +22,9 @@ nav{
 }
 
 
-/*imagenes y botones de la primera seccion*/
+/*imagenes y botones de la segunda seccion*/
 
-.contiene-todo{
+.contenedor-imagenes{
 	margin-top: -100px;
     position: relative;
     z-index: 2;
@@ -39,29 +39,40 @@ nav{
 		width: 50%;
 	}
 	.img-circle{
-		border: 7px solid $color_letra_principal;
+		@include borde-de-imagenes();
 		margin-bottom: 30px;
 	}
-
 }
 
 
 /*tercera seccion*/
 
 .contenedor-seccion-3{
-	background-color: #DEE1EE;
+	background-color: $background_seccion_welcome;
+	padding-top: 4%;
+	padding-bottom: 4%;
 	.img-welcome{
-		border-radius: 50px;
+		border-radius: 30px;
 		padding-left: 0;
-		padding-top: 22px;
+	}
+	h5{
+		@include font-size-h5();
 	}
 }
 
 
 /*cuarta seccion*/
 .contenedor-seccion-4{
+	padding: 3%;
 	background-color: $color_nav;
 	color: $color_letra_principal;
+	hr{
+		color: $background_seccion_welcome;
+		margin-bottom: 2%;
+	}
+	h4{
+		font-size: 25px;
+	}
 }
 
 .radius-img{
@@ -73,18 +84,28 @@ nav{
 
 .primer-footer{
 	background-color: $background_footer;
+	padding-left: 2%;
 	h5,p{
 		color: $color_letra_principal;
+		@include font-size-h5();
+	}
+	.segundo-footer{
+		color: $color_letra_principal;
+		.ultimo-footer{
+			font-size: 13px;
+
+		}
+	}
+	.logos{
+		border-radius: 60px;
+		@include borde-de-imagenes();
+		width: 15%;
 	}
 }
 
-.segundo-footer{
-	color: $color_letra_principal;
-}
 
-.logos{
-	border-radius: 60px;
-}
+
+
 
 
 

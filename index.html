@@ -19,6 +19,7 @@
 	</ul>
 	<nav>
 	  	<div class="nav-wrapper">
+	  		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	    	<ul class="center-text hide-on-med-and-down">
 		      	<li><a href="#">home</a></li>
 		      	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">blog<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -26,15 +27,17 @@
 		      	<li><a href="#">careers</a></li>
 		      	<li><a href="#">contact us</a></li>
 	    	</ul>
-	  	</div>
+	    	<ul class="side-nav" id="mobile-demo">
+		        <li><a href="#">home</a></li>
+		      	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">blog<i class="material-icons right">arrow_drop_down</i></a></li>
+		      	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">about us<i class="material-icons right">arrow_drop_down</i></a></li>
+		      	<li><a href="#">careers</a></li>
+		      	<li><a href="#">contact us</a></li>
+		    </ul>
+    	</div>
 	</nav>
 
-
-<!-- primera seccion slider -->
-	
-
-
-<!-- segunda seccion imagenes -->
+<!--primera seccion slider - segunda seccion imagenes -->
 	<div class="container-fluid">
 		<div class="slider">
 		    <ul class="slides">
@@ -51,48 +54,48 @@
 		</div>
 		<div class="container">
 			<div class="row">
-			<div class="contiene-todo">
-				<div class="col s12 m3 l3 xl3 contenedor-imagenes">
-					<img class="circle responsive-img img-circle" src="assets/img/skin_care_1_thumb.jpg">
-					<div class="row">
-						<div class="col s12 m12 l12 xl12 texto">
-							<h6>SKIN CARE</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas convallis.</p>
-							<button>READ MORE...</button>
-						</div>
-					</div> 	
+				<div class="contenedor-imagenes">
+					<div class="col s12 m3 l3 xl3">
+						<img class="circle responsive-img img-circle" src="assets/img/skin_care_1_thumb.jpg">
+						<div class="row">
+							<div class="col s12 m12 l12 xl12 texto">
+								<h6>SKIN CARE</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas convallis.</p>
+								<button>READ MORE...</button>
+							</div>
+						</div> 	
+					</div>
+					<div class="col s12 m3 l3 xl3">
+						<img class="circle responsive-img img-circle" src="assets/img/spa_ treatments_thumb.jpg">
+						<div class="row">
+							<div class="col s12 m12 l12 xl12 texto">
+								<h6>SPA TREATMENTS</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas convallis.</p>
+								<button>READ MORE...</button>
+							</div>
+						</div> 	
+					</div>
+					<div class="col s12 m3 l3 xl3">
+						<img class="circle responsive-img img-circle" src="assets/img/aromatherapy_1_thumb.jpg">
+						<div class="row">
+							<div class="col s12 m12 l12 xl12 texto">
+								<h6>AROMATHERAPY</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas convallis.</p>
+								<button>READ MORE...</button>
+							</div>
+						</div> 	
+					</div>
+					<div class="col s12 m3 l3 xl3">
+						<img class="circle responsive-img img-circle" src="assets/img/massage_thumb.jpg">
+						<div class="row">
+							<div class="col s12 m12 l12 xl12 texto">
+								<h6>MASSAGE</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas convallis.</p>
+								<button>READ MORE...</button>
+							</div>
+						</div> 	
+					</div>
 				</div>
-				<div class="col s12 m3 l3 xl3 contenedor-imagenes">
-					<img class="circle responsive-img img-circle" src="assets/img/spa_ treatments_thumb.jpg">
-					<div class="row">
-						<div class="col s12 m12 l12 xl12 texto">
-							<h6>SPA TREATMENTS</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas convallis.</p>
-							<button>READ MORE...</button>
-						</div>
-					</div> 	
-				</div>
-				<div class="col s12 m3 l3 xl3 contenedor-imagenes">
-					<img class="circle responsive-img img-circle" src="assets/img/aromatherapy_1_thumb.jpg">
-					<div class="row">
-						<div class="col s12 m12 l12 xl12 texto">
-							<h6>AROMATHERAPY</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas convallis.</p>
-							<button>READ MORE...</button>
-						</div>
-					</div> 	
-				</div>
-				<div class="col s12 m3 l3 xl3 contenedor-imagenes">
-					<img class="circle responsive-img img-circle" src="assets/img/massage_thumb.jpg">
-					<div class="row">
-						<div class="col s12 m12 l12 xl12 texto">
-							<h6>MASSAGE</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maecenas convallis.</p>
-							<button>READ MORE...</button>
-						</div>
-					</div> 	
-				</div>
-			</div>
 			</div>
 		</div>
 	</div>		
@@ -101,7 +104,7 @@
 	<div class="container-fluid contenedor-seccion-3">
 		<div class="row">
 			<div class="col s12 m12 l5 xl5 offset-m1">
-				<div class="contenedor-imagen right">
+				<div class="right">
 					<img class="responsive-img img-welcome" src="assets/img/welcom_thumb.jpg">
 				</div>
 			</div>
@@ -129,31 +132,33 @@
 		<div class="row">
 			<div class="col s12 m12 l6 xl6">
 				<div class="contenedor-about">
-					<h4 class="right">ABOUT US</h4>
+					<h4 class="right-align">ABOUT US</h4>
 				</div>
+				<hr>
 				<div class="row">
 					<div class="col s12 m6 l6 xl6">
-						<div class="">
-							<img class="responsive-img radius-img" src="assets/img/home1.jpg">
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deserunt illum, est consequuntur quibusdam, saepe fugit et consequatur quae, voluptate, libero corrupti tempore dolorem distinctio neque voluptas iste temporibus numquam.
-						</p>
-					</div>
-					<div class="col s12 m6 l6 xl6">
 						<div class="text-about">
+							<div class="img-about">
+								<img class="responsive-img radius-img" src="assets/img/home1.jpg">
+							</div>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corporis, repellat eius quos eum impedit animi placeat et pariatur aspernatur nihil, sapiente rerum quidem illo. Cupiditate dolorem, odit cumque 	corrupti!
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corporis, repellat eius quos eum impedit animi placeat et pariatur aspernatur nihil, sapiente rerum quidem illo. Cupiditate dolorem, odit cumque corrupti!
 							</p>
 						</div>
 					</div>
-				</div>		
-			</div>
+					<div class="col s12 m6 l6 xl6">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quas hic soluta dignissimos ab recusandae natus tempora architecto? Harum excepturi corporis quia mollitia laboriosam, alias magnam reiciendis animi voluptate recusandae.
+						</p>
+					</div>
+				</div>
+			</div>	
 
 			<div class="col s12 m12 l6 xl6">
 				<div class="contenedor-about">
 					<h4>GIFT PROGRAM</h4>
 				</div>
+				<hr>
 				<div class="row">
 					<div class="col s12 m6 l6 xl6">
 						<div class="text-gift">
@@ -182,10 +187,10 @@
               	<div class="col s12 m12 l6 xl6">
                 	<h5>FOLLOW US</h5>
                 	<div class="contenedor-logos">
-                		<img class="responsive-img logos img-circle" src="assets/img/facebook-logo-webtreatsetc.png">
-						<img class="responsive-img logos img-circle" src="assets/img/google-g-logo-webtreatsetc.png">
-						<img class="responsive-img logos img-circle" src="assets/img/twitter-bird3-webtreatsetc (1).png">
-						<img class="responsive-img logos img-circle" src="assets/img/rss-basic-webtreatsetc.png">
+                		<img class="responsive-img logos" src="assets/img/facebook-logo-webtreatsetc.png">
+						<img class="responsive-img logos" src="assets/img/google-g-logo-webtreatsetc.png">
+						<img class="responsive-img logos" src="assets/img/twitter-bird3-webtreatsetc (1).png">
+						<img class="responsive-img logos" src="assets/img/rss-basic-webtreatsetc.png">
                 	</div>
               	</div>
               	<div class="col s12 m12 l3 xl3">
@@ -202,7 +207,7 @@
         </div>
         <div class="footer-copyright segundo-footer">
             <div class="container-fluid">
-            <p>DISCLAIMER: Revolutionary hair color fortifies every atrand giving you shinier, healthier-looking hair & amazing base color paired with hints of red high & low-lights for a sultry color with  amazing dimernsion.</p>
+            	<p class="ultimo-footer">DISCLAIMER: Revolutionary hair color fortifies every atrand giving you shinier, healthier-looking hair & amazing base color paired with hints of red high & low-lights for a sultry color with  amazing dimernsion.</p>
             </div>
         </div>
     </footer>

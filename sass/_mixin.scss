@@ -5,3 +5,12 @@
 @mixin color-letra-footer(){
 	color: #ddbc83;
 }
+
+@mixin borde-de-imagenes(){
+	border: 7px solid $color_letra_principal;
+}
+
+@mixin font-size-h5(){
+	font-size: 15px;
+	font-weight: 500;
+}
